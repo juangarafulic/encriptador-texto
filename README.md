@@ -1,6 +1,18 @@
-# &#128273; Encriptador de Texto &#128270;
+<h1 align="center"> 
+  <img src="https://github.com/juangarafulic/sistema-de-registro/assets/156981788/c37c4907-feb9-46d3-9014-0262a21f17bb" width=100>
+  <p>&#128273; Encriptador de Texto &#128270;</p>
+</h1>
 
-<a href="https://juangarafulic.github.io/encriptador-texto/">Mira mi página</a>
+## Estado del Proyecto: 
+ <p align="center">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+ </p>
+ <p align="center">
+   &#128679; Proyecto en construcción &#128679;
+ </p>
+ <p align="center">
+   <a href="https://juangarafulic.github.io/encriptador-texto/">Mira mi página</a>
+ </p>
 
 ## Paso a Paso del Proyecto
 ### Estructura HTML
