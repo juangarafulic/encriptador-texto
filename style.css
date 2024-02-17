@@ -1,1 +1,11 @@
-/* Paso a Paso CSS
+/* <uniquifier>: Use a uniquifier for the class name
+   <weight>: Use a value from 100 to 900 */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
