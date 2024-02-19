@@ -24,8 +24,20 @@ main {
 
 #texto-original {
     display: block;
-    width: 577px;
+    width: 500px;
     height: 48px;
+}
+
+.advertencia {
+    display: inline;
+}
+
+.salida {
+    display: inline;
+}
+
+.persona {
+    width: 100px;
 }
 
 footer {
