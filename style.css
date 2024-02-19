@@ -9,3 +9,16 @@ body {
   font-variation-settings:
     "slnt" 0;
 }
+
+header {
+    margin: 40px 0 40px 40px;
+}
+
+main {
+    margin: 0 0 0 240px;
+}
+
+footer {
+    text-align: center;
+    margin: 40px auto;
+}
