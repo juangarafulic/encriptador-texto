@@ -15,30 +15,70 @@ header {
 }
 
 main {
-    margin: 0 0 0 240px;
+    margin: 0 40px 0 180px;
 }
 
 .entrada {
     display: inline;
+    width: 60%;
+}
+
+.entrada li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 #texto-original {
+    height: 300px;
+    margin: 0 0 20px;
     display: block;
-    width: 500px;
-    height: 48px;
 }
 
 .advertencia {
     display: inline;
 }
 
+.botones {
+    display: block;
+}
+
 .salida {
+    width: 25%;
     display: inline;
 }
 
-.persona {
-    width: 100px;
+.salida li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
 }
+
+.persona {
+    width: 150px;
+}
+
+.mensaje-uno {
+    
+}
+
+.mensaje-dos {
+    font-size: small;
+}
+
+
 
 footer {
     text-align: center;
