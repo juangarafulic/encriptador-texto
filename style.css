@@ -18,6 +18,11 @@ main {
     margin: 0 0 0 240px;
 }
 
+#texto-original {
+    width: 577px;
+    height: 48px;
+}
+
 footer {
     text-align: center;
     margin: 40px auto;
