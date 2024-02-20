@@ -8,28 +8,34 @@ body {
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
+  background: #F3F5FC;
+  margin-top: 40px;
 }
 
-header {
-    margin: 40px 0 40px 40px;
+header, .logo {
+    margin: 0 0 40px;
+    width: 120px;
+    display: inline;
 }
 
 main {
-    margin: 0 40px 0 180px;
+    /* margin: 40px 10px 0 20px; */
+    /* background: #3939ab; */
+    display: inline;
 }
 
 .entrada {
     display: inline;
-    width: 60%;
 }
 
 .entrada li {
     display: inline-block;
     text-align: center;
-    width: 30%;
+    width: 40%;
+    height: 500px;
     vertical-align: top;
     margin: 0 1.5%;
-    padding: 30px 20px;
+    padding: 120px 20px;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
@@ -37,8 +43,11 @@ main {
 
 #texto-original {
     height: 300px;
+    width: 99%;
     margin: 0 0 20px;
     display: block;
+    background: #F3F5FC;
+    
 }
 
 .advertencia {
@@ -49,18 +58,28 @@ main {
     display: block;
 }
 
+.encriptar {
+    width: 49%;
+}
+
+.desencriptar {
+    width: 49%;
+}
+
 .salida {
-    width: 25%;
     display: inline;
+    
 }
 
 .salida li {
     display: inline-block;
     text-align: center;
-    width: 30%;
+    width: 20%;
+    height: 500px;
+    background: #FFFFFF;
     vertical-align: top;
     margin: 0 1.5%;
-    padding: 30px 20px;
+    padding: 30px 0px;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
