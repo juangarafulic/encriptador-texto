@@ -16,6 +16,7 @@ header, .logo {
     margin: 0 0 40px;
     width: 120px;
     display: inline;
+    vertical-align: top;
 }
 
 main {
@@ -30,9 +31,9 @@ main {
 
 .entrada li {
     display: inline-block;
-    text-align: center;
-    width: 40%;
-    height: 500px;
+    /* text-align: center; */
+    width: 60%;
+    height: 540px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 120px 20px;
@@ -41,59 +42,97 @@ main {
     border-radius: 10px;
 }
 
-#texto-original {
-    height: 300px;
+#texto {
+    /* height: 300px; */
     width: 99%;
-    margin: 0 0 20px;
+    margin: 0 0 10%;
     display: block;
     background: #F3F5FC;
-    
+}
+
+.simbolo-advertencia {
+    width: 12px;
+    vertical-align: middle;
 }
 
 .advertencia {
     display: inline;
+    text-align: left;
+    font-size: 12px;
+    color: #495057;
 }
 
-.botones {
+.caja-botones-entrada {
     display: block;
+    width: 80%;
+    margin: 120px 0 0 0;
+}
+
+.botones-entrada {
+    display: block;
+    margin: 12px 0 0 0;
+    /* text-align: center; */
 }
 
 .encriptar {
-    width: 49%;
+    width: 45%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    background: #0A3871;
+    color: #FFFFFF;
+    
 }
 
 .desencriptar {
-    width: 49%;
+    width: 45%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    background: #D8DFE8;
+    color: #0A3871;
 }
 
 .salida {
     display: inline;
-    
 }
 
 .salida li {
     display: inline-block;
     text-align: center;
     width: 20%;
-    height: 500px;
+    height: 540px;
     background: #FFFFFF;
     vertical-align: top;
     margin: 0 1.5%;
-    padding: 30px 0px;
+    padding: 30px 32px;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
 }
 
 .persona {
-    width: 150px;
+    width: 100%;
+}
+
+.mensaje-uno {
+    font-weight: 700;
+    font-size: 18px;
+    color: #343A40;
+    margin: 1em 0 0 0;
 }
 
 .mensaje-dos {
-    font-size: small;
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+    margin: 1em 0 0 0;
 }
 
 footer {
     text-align: center;
     margin: 40px auto;
+    color: #495057;
 }
