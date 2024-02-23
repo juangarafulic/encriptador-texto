@@ -42,12 +42,12 @@ main {
     border-radius: 10px;
 }
 
-#texto {
+#texto-entrada {
     /* height: 300px; */
     width: 99%;
     margin: 0 0 10%;
     display: block;
-    background: #F3F5FC;
+    background: transparent;
 }
 
 .simbolo-advertencia {
@@ -113,6 +113,14 @@ main {
     border-radius: 10px;
 }
 
+#texto-salida {
+    /* height: 300px; */
+    width: 99%;
+    margin: 0 0 10%;
+    display: block;
+    background: transparent;
+}
+
 .persona {
     width: 100%;
 }
@@ -128,7 +136,7 @@ main {
 .mensaje-dos {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.25em;
+    line-height: 1.5em;
     color: #495057;
     margin: 1em 0 0 0;
 }
