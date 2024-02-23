@@ -1,0 +1,1 @@
+let textoSalida = document.getElementById("texto-salida").style.display = "none";
