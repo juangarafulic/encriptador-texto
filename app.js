@@ -9,10 +9,21 @@ let setReglas = [
 ];
 
 function botonEncriptar() {
-    let texto = textoEntrada.value;
-    console.log(texto);
+    let texto = encriptar(textoEntrada.value);
+    textoSalida.value = texto;
 }
 
+function encriptar(fraseEncriptada) {
+    for(let i = 0; i < setReglas.length; i++) {
+        if(fraseEncriptada.includes(setReglas[i][0])) {
+            fraseEncriptada = fraseEncriptada.replaceAll(
+                setReglas[i][0],
+                setReglas[i][1]
+            )
+        }
+    }
+    return fraseEncriptada
+}
 /*
 if (texto == null) {
 document.getElementById("texto-salida").style.display = "none";
