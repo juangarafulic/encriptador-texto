@@ -25,6 +25,8 @@ function encriptar(fraseEncriptada) {
     return fraseEncriptada
 }
 /*
+//Área para mostrar el texto encriptado/desencriptado.
+//comienza con la imagen
 if (texto == null) {
 document.getElementById("texto-salida").style.display = "none";
 } else {
