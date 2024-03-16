@@ -121,6 +121,10 @@ main {
     background: transparent;
 }
 
+#salida-inicio {
+    display: block;
+}
+
 .persona {
     width: 100%;
 }

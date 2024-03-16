@@ -1,5 +1,7 @@
 let textoEntrada = document.querySelector("#texto-entrada"); //colocar # es clave
 let textoSalida = document.querySelector("#texto-salida");
+let elementosSalida = document.querySelector("#salida-inicio");
+let mostrarElementos = true;
 let setReglas = [
     ["a", "ai"], // 0
     ["e", "enter"], // 1
@@ -8,9 +10,40 @@ let setReglas = [
     ["u", "ufat"] // 4
 ];
 
-function botonEncriptar() {
-    let texto = encriptar(textoEntrada.value);
-    textoSalida.value = texto;
+// Función para cambiar entre la imagen y el texto
+function alternarElementos() {
+    const elementos = document.getElementById("salida-inicio");
+    const texto = document.getElementById("texto-salida");
+
+    if (mostrarElementos) {
+        elementos.style.display = "none";
+        texto.style.display = "block";
+    } else {
+        elementos.style.display = "block";
+        texto.style.display = "none";
+    }
+
+    // Cambiar el estado
+    mostrarElementos = !mostrarElementos;
+}
+
+//Otra forma de alternar elementos
+function mostrarSalida() {
+    var x = document.getElementById("salida-inicio");
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+}
+
+//Una condición para mostrar u ocultar elementos
+let mostrarObjeto = false; // Puedes asignar aquí el valor de tu variable
+
+if (mostrarObjeto) {
+    document.getElementById("salida-inicio").style.display = "block"; // Muestra el objeto
+} else {
+    document.getElementById("miObjeto").style.display = "none"; // Oculta el objeto
 }
 
 function encriptar(fraseEncriptada) {
@@ -22,14 +55,19 @@ function encriptar(fraseEncriptada) {
             )
         }
     }
-    return fraseEncriptada
+    return fraseEncriptada;
 }
-/*
-//Área para mostrar el texto encriptado/desencriptado.
-//comienza con la imagen
-if (texto == null) {
-document.getElementById("texto-salida").style.display = "none";
-} else {
-    document.getElementById("persona").style.display = "none";
+
+function reiniciarElementos() {
+    elementosSalida.style.display = 'block';
+    textoSalida.style.display = 'none';
 }
-*/
+
+function botonEncriptar() {
+    let textoEcriptado = encriptar(textoEntrada.value);
+    textoSalida.value = textoEcriptado;
+    //mostrarSalida(elementosSalida);
+    alternarElementos(elementosSalida);
+    //textoEntrada.value = "";
+    console.log(textoSalida.value);
+}
