@@ -47,6 +47,9 @@ function mostrarElementosIniciales() {
     const textoSalidaElemento = document.getElementById('texto-salida');
     textoSalidaElemento.textContent = ''; // Limpia el texto encriptado/desencriptado
     textoSalidaElemento.style.display = 'none'; // Oculta el texto encriptado/desencriptado
+
+    const copiarInicial = document.getElementById('boton-copiar');
+    copiarInicial.style.display = 'none'; // Oculta el boton copiar
 }
 
 function mostrarResultado(texto) {
@@ -56,6 +59,9 @@ function mostrarResultado(texto) {
     const textoSalidaElemento = document.getElementById('texto-salida');
     textoSalidaElemento.textContent = texto;
     textoSalidaElemento.style.display = 'block'; // Muestra el texto encriptado/desencriptado
+
+    const copiarInicial = document.getElementById('boton-copiar');
+    copiarInicial.style.display = 'block'; // Muestra el boton copiar
 }
 
 function botonCopiar() {
