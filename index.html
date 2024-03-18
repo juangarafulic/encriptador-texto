@@ -11,40 +11,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <header>
-            <h1 class="logo"><img src="images/logo-alura.svg" alt="Logo de Alura"></h1>
-        </header>
-
         <main>
-            <ul class="entrada">
-                <li>
+            <div class="flex-box">  
+
+                <div class="logo">
+                    <img src="images/logo-alura.svg" alt="Logo de Alura">
+                </div>
+
+                <div class="entrada">
                     <textarea id="texto-entrada" placeholder="Ingrese el texto aquí"></textarea>
-                    <div class="caja-botones-entrada">
-                        <img class="simbolo-advertencia" src="images/exclamation-circle.svg" alt="Simbolo de exclamación">
-                        <p class="advertencia">Sólo letras minúsculas y sin acentos</p>
+                    <div class="botones">
+                        <div class="caja-advertencia">
+                            <img class="simbolo-advertencia" src="images/exclamation-circle.svg" alt="Simbolo de exclamación">
+                            <p class="advertencia">Sólo letras minúsculas y sin acentos</p>
+                        </div>
                         <div class="botones-entrada">
-                            <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
-                            <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                                <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                                <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
                         </div>
                     </div>
-                </li>  
-            </ul>
-           
-            <ul class="salida">
-                <li>
-                    <p id="texto-salida" class="texto-salida" style="display: none;">Texto oculto de prueba</p>
-                    <div id="salida-inicio">
-                        <img id="imagen" class="persona" src="images/dibujo-persona.svg" alt="Dibujo de una persona con una lupa observando un diamante">
-                        <p class="mensaje-uno">Ningún mensaje fue encontrado</p>
-                        <p class="mensaje-dos">Ingrese el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                    <div id="boton-copiar">
-                        <button class="copiar" onclick="botonCopiar()">Copiar</button>
-                    </div>
-                </li>
-            </ul>
-                      
+                </div>
+
+                <div class="salida">
+                    <ul>
+                        <li>
+                            <p id="texto-salida" class="texto-salida" style="display: none;">Texto oculto de prueba</p>
+        
+                            <div id="salida-inicio">
+                                <img id="imagen" class="persona" src="images/dibujo-persona.svg" alt="Dibujo de una persona con una lupa observando un diamante">
+                                <p class="mensaje-uno">Ningún mensaje fue encontrado</p>
+                                <p class="mensaje-dos">Ingrese el texto que desees encriptar o desencriptar.</p>
+                            </div>
+        
+                            <div id="boton-copiar">
+                                <button class="copiar" onclick="botonCopiar()">Copiar</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
         </main>
         <footer>
             <p></p>
