@@ -96,7 +96,6 @@ textarea:focus {
 .salida {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
     justify-content: space-between;
     text-align: center;
     width: 25%;
@@ -119,11 +118,11 @@ textarea:focus {
     background: transparent;
     font-size: 20px;
     text-align: left;
+    align-self: flex-start;
 }
 
 #salida-inicio {
-    /* display: block; */
-    height: 500px;
+    margin: auto; /*mantiene centrado el item*/
 }
 
 .persona {
@@ -154,6 +153,7 @@ textarea:focus {
     padding: 24px;
     background: #FFFFFF;
     color: #0A3871;
+    align-self: flex-end;
 }
 
 footer {
