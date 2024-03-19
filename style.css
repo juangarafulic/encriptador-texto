@@ -15,7 +15,7 @@ body {
 .flex-box {
     display: flex;
     justify-content: space-between;
-    height: 540px;
+    height: 88vh;
 }
 
 .entrada {
@@ -27,16 +27,17 @@ body {
     /* border-bottom: 1px solid; */
     height: 80%;
     padding: 2%;
-
 }
 
 textarea {
     color: #0A3871;
     background: transparent;
     font-family: "Inter", sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
-    border: none;
+    border: transparent;
+    width: 100%;
+    min-height: 8em;
 }
 
 textarea:focus {
@@ -57,14 +58,14 @@ textarea:focus {
 }
 
 .simbolo-advertencia {
-    width: 12px;
+    width: 14px;
     vertical-align: middle;
 }
 
 .advertencia {
     display: inline;
     text-align: left;
-    font-size: 12px;
+    font-size: 14px;
     color: #495057;
 }
 
@@ -79,8 +80,9 @@ textarea:focus {
     padding: 1em;
     background: #0A3871;
     color: #FFFFFF;
-    width: 47.5%;
+    flex: 1;
     height: 60px;
+    margin: 0 1% 0 0;
 }
 
 .desencriptar {
@@ -89,8 +91,9 @@ textarea:focus {
     padding: 1em;
     background: #D8DFE8;
     color: #0A3871;
-    width: 47.5%;
+    flex: 1;
     height: 60px;
+    margin: 0 0 0 1%;
 }
 
 .salida {
@@ -99,9 +102,8 @@ textarea:focus {
     justify-content: space-between;
     text-align: center;
     width: 25%;
-    min-width: 25%;
-    height: 540px;
-    max-height: 600px;
+    /* min-width: 25%; */
+    height: 100%;
     background: #FFFFFF;
     /* margin: 0 1.5%; */
     padding: 2%;
@@ -113,12 +115,13 @@ textarea:focus {
 
 #texto-salida {
     width: 99%;
-    margin: 0 0 10%;
     color: #495057;
     background: transparent;
     font-size: 20px;
+    line-height: 1.25em;
     text-align: left;
     align-self: flex-start;
+    word-wrap: break-word;
 }
 
 #salida-inicio {
@@ -139,7 +142,7 @@ textarea:focus {
 
 .mensaje-dos {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5em;
     color: #495057;
     margin: 1em 0 0 0;
@@ -163,4 +166,114 @@ footer {
     color: #495057;
     font-size: 12px;
     background-color: #F3F5FC;
+}
+
+@media screen and (max-width: 770px) {
+    .flex-box {
+        display: block;
+        /* flex-direction: column;
+        justify-content: space-between; */
+        max-width: 98vw;
+        min-height: 95vh;
+    }
+    .logo {
+        margin-top: 5vh;
+        margin-left: -2.5vw;
+    }
+    .entrada {
+        display: flex;
+        align-self: flex-start;
+        height: 60%;
+        max-height: fit-content;
+        width: 88vw;
+        margin: 10vh auto 0;
+        padding: 0px;
+    }
+    textarea {
+        min-height: 75%;
+    }
+    .salida {
+        display: block;
+        height: fit-content;
+        width: 88vw;
+        margin: 5vh auto;
+    }
+    #texto-salida {
+        /* width: 99%; */
+        color: #495057;
+        background: transparent;
+        font-size: 20px;
+        text-align: left;
+        margin: 4% 0;
+        word-wrap: break-word;
+    }
+    .salida-inicio {
+        margin: auto;
+    }
+    .persona { 
+            display: none; 
+        }
+    .mensaje-uno {
+        margin: auto;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .flex-box {
+        display: block;
+        max-width: 88vw;
+        /* min-height: 95vh; */
+        margin: 0 auto;
+    }
+    .logo {
+        margin-top: 3vh;
+        margin-left: -12vw;
+    }
+    .entrada {
+        /* height: 40%; */
+        width: 88vw;
+        margin: 10vh auto 0;
+    }
+    textarea {
+        min-height: 65%;
+    }
+    .botones-entrada {
+        flex-direction: column;
+    }
+
+    .encriptar {
+        width: 88vw;
+        margin: 0 0 2.5% 0;
+    }
+    .desencriptar {
+        width: 88vw;
+        margin: 2.5% 0 0 0;
+    }
+    .salida {
+        display: block;
+        height: fit-content;
+        width: 88vw;
+        margin: 5vh auto;
+
+    }
+    #texto-salida {
+        max-width: 99%;
+        color: #495057;
+        background: transparent;
+        font-size: 20px;
+        text-align: left;
+        align-self: flex-start;
+        margin: 4% 0;
+        word-wrap: break-word;
+    }
+    .copiar {
+        margin: 0 0 4% 0;
+    }
+    footer {
+        padding: 10px 0;
+        margin: 5% 0 0 0;
+    }
 }
